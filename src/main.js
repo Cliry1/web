@@ -5,8 +5,8 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 
-const form = document.querySelector(".form");
-const ul = document.querySelector(".gallery");
+const form = document.querySelector(".form-search");
+const ul = document.querySelector(".ul-gallery");
 const loader = document.querySelector(".loader");
 const btnMore = document.querySelector(".button-load-more");
 

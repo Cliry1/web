@@ -1,11 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,14 +15,19 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-.form{
+*{
+  color: #1b1b1b;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.09em;
+ 
+}
+.form-search{
   display: flex;
   justify-content: center;
   margin: 32px 0 40px;
   gap: 8px;
 }
-.input{
+.form-search-input{
   width: 272px;
   height: 40px;
   padding: 8px 16px;
@@ -40,15 +38,15 @@
   border: 1px solid #808080;
 }
 
-.input:hover{
+.form-search-input:hover{
   border: 1px solid #000;
 }
-.input:focus{
+.form-search-input:focus{
   outline: none;
   border: 1px solid #4E75FF;
 }
 
-.button{
+.form-search-button{
   width: 91px;
   color: #FFF;
   font-family: Montserrat;
@@ -60,14 +58,14 @@
   border-radius: 8px;
   background: #4E75FF;
 }
-.button:hover{
+.form-search-button:hover{
   background: #6C8CFF;
 }
 .element{
   border: 2px solid #000;
   border-radius: 4px;
 }
-.gallery{
+.ul-gallery{
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -141,3 +139,93 @@
       transform: rotate(360deg);
   }
   } 
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header{
+    box-shadow: 0 0 4px 0 ;
+    padding: 12px 0;
+  }
+  .container{
+    margin: 0 auto;
+  }
+
+  .list-instruction{
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .nav-list{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    font-size: 24px;
+  }
+  
+  .container-title{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .main-title{
+    display: inline;
+    font-size: 40px;
+  }
+
+  .main-text{
+    width: 900px;
+    margin: 0 auto 45px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .container .link-swap-page{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .video-gallary{
+    margin: 45px auto;
+    display: flex;
+    border-radius: 50px;
+  }
+
+  .second-section .container>h2{
+    font-size: 95px;
+  }
+  #anchor{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 55px;
+    margin-bottom: 35px;
+  }
+  .anchor-text{
+    width: 400px;
+    text-align: center;
+    margin: 20px auto ;
+    font: italic 500 16px/1.4 Arial, sans-serif;
+    
+  }
+ 
+  .nav-list>li>a:hover,
+  .nav-list>li>a:focus{
+    color:rgb(19, 19, 173);
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 16px;
+    }
+    .section {
+      padding: 16px 0;
+    }
+  }
+  @media (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+  }
