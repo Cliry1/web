@@ -215,6 +215,93 @@
     color:rgb(19, 19, 173);
   }
 
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .link-contact{
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+  }
+  footer{
+    box-shadow: 0 0 4px 0;
+    padding: 12px 0;
+    
+  }
+  .link-contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .link-contact-info-email:hover,.link-contact-info-tel:hover,
+  .link-contact-info-email:focus,.link-contact-info-tel:focus{
+    color: #6C8CFF;
+  }
+  .second-page-form{
+    border: #000 solid 1px;
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 50px;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+    background-color: #dbe2fa;
+    border-radius: 50px;
+  }
+  .second-page-form > p{
+    width: 550px;
+    text-align: center;
+  }
+  .second-page-form-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+  }
+  .second-page-form-rating-text{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  label{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .input{
+    width: 500px;
+    padding: 6px;
+    border-radius: 50px;
+    outline: transparent;
+    border: transparent;
+  }
+
+  .input:hover,.input:focus,
+  #textarea-feedback:focus,
+  #textarea-feedback:hover{
+    outline: #5578f5 2px solid;
+  }
+  .second-page-form-rating-radio{
+    display: flex;
+    text-align: center;
+    gap: 12px;
+    justify-content: center;
+  }
+  .radio{
+    width: 20px;
+    height: 20px;
+  }
+  #textarea-feedback{
+    border: transparent;
+    border-radius: 10px;
+    outline: transparent;
+    resize: none;
+    padding: 6px;
+  }
   @media (min-width: 768px) {
     .container {
       width: 768px;

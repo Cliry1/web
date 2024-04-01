@@ -15,7 +15,7 @@ let pageCount;
 const limit = 40;
 let totalItems;
 
-var lightbox = new SimpleLightbox('.gallery a', {   
+var lightbox = new SimpleLightbox('.ul-gallery a', {   
   captionsData: 'alt',
   captionDelay: 250, }); 
 
