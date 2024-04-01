@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://cliry1.github.io/web/">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="2024, Oleksii Yerokhin">
+    <meta name="description"
+      content="An image gallery website where you can enjoy a vast selection of art and photography">
+    <meta name="author" content="Oleksii Yerokhin">
+    <meta name="keywords" content="design, img, gallery, photo">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+    <title>Gallery</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/styles-2b47c217.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b2578120.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/styles-ae8c5d8c.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a target="_blank" href="https://www.instagram.com/goitclub/">Instagram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/goITclub/">Facebook</a>
+            </li>
+            <li><a href="./feedback.html">Feedback</a></li>
+            <li><a href="#anchor">Search</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="section-gallery">
+        <div class="container">
+          <span class="container-title">
+            <h1 class="main-title">Gallery</h1>
+          </span>
+          <p class="main-text" id="main-text">Welcome to our gallery!<br> Explore a stunning collection of artwork and photography created by
+            talented artists from around the world. Immerse yourself in a visual journey filled with creativity and
+            inspiration. Whether you're a seasoned art
+            enthusiast or just starting to appreciate the beauty of visual arts, our gallery has something for everyone.
+            Browse through our diverse
+            exhibits, discover new perspectives, and let the beauty of art captivate your senses. Get ready to experience
+            the power of creativity
+            and imagination in our vibrant gallery space.</p>
+          <p></p>
+
+          <video class="video-gallary" src="/goit-js-hw-12/assets/video-43022ae9.mp4" width="700" controls ></video>
+      </section>
+      <section class="second-section">
+        <div class="container">
+          <h2 id="anchor">Search image</h2>
+          <ol class="list-instruction">
+            <li>Enter a query: Enter the word or phrase you want to find in the text input field.</li>
+            <li>Initiate a search: after entering a query, click the "Search" button to start searching and processing information.</li>
+            <li> Wait for the result: Wait for the information to be processed. This may take a few seconds, depending on the complexity of the request and the amount of data.</li>
+            <li>Viewing the results: after the processing is complete, you will be presented with the result in the form of pictures and statistics.</li>
+          </ol>
+          <p class="anchor-text">Thank you for being with us!!!</p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <form  class="form-search" action="submit">
+            <input class="form-search-input" placeholder="Search images..." name="item" type="text" autocomplete="off">
+            <button class="form-search-button" type="submit">Search</button>
+          </form>
+          <ul class="ul-gallery"></ul>
+          <button class="button-load-more search" type="button">Load more</button>
+          <span class="loader search"></span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer">
+        <img src="/goit-js-hw-12/assets/art-gallery-icon-20-70a92901.png" alt="logo" width="60" height="60">
+        <div class="link-contact">
+          <div class="link-contact-info">
+            <p>E-mail</p>
+          <a class="link-contact-info-email" href="mailto:6980419@stud.nau.edu.ua">6980419@stud.nau.edu.ua</a>
+          </div>
+          <div class="link-contact-info">
+            <p>Number</p>
+          <a class="link-contact-info-tel" href="tel:+380639999999">063-999-99-99</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
