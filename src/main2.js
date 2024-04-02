@@ -1,3 +1,6 @@
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
 const form = document.querySelector(".second-page-form");
 const storage = "feedback-form-state";
 
@@ -24,12 +27,18 @@ form.addEventListener("input", () =>{
 })
 
 form.addEventListener("submit", event=> {
+  iziToast.success({
+    title: 'Success',
+    message:
+      'Thank you for your feedback',
+    position: "topCenter"
+  });
   event.preventDefault();
   if(form.elements.feedback.value.trim()===""||form.elements.email.value.trim()===""){
     alert("Email and feedback must be filled");
     return;
   }
-  console.log(localStorage.getItem(storage))
+
   localStorage.removeItem(storage);
   form.reset();
 })
