@@ -58,7 +58,7 @@
   border-radius: 8px;
   background: #4E75FF;
 }
-.form-search-button:hover{
+.form-search-button:hover,.second-page-form-button-sumbit:hover{
   background: #6C8CFF;
 }
 .element{
@@ -251,6 +251,17 @@
     margin-bottom: 50px ;
     background-color: #dbe2fa;
     border-radius: 50px;
+  }
+  .second-page-form-button-sumbit{
+    width: 91px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.04em;
+    border:none;
+    border-radius: 8px;
+    background: #4E75FF;
   }
   .second-page-form > p{
     width: 550px;
