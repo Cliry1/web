@@ -4,7 +4,6 @@
 <head>
 
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta http-equiv="content-language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="copyright" content="2024, Oleksii Yerokhin">
   <meta name="description"
@@ -34,10 +33,11 @@
           <li><a href="#anchor">Search</a></li>
         </ul>
       </nav>
+    </div>
   </header>
   <main>
     <section>
-      <form class="second-page-form" action="">
+      <form class="second-page-form" action="./main2.js" method="get">
         <div class="second-page-form-title">
           <img src="./img/12050wavinghand_111524.png" width="30" alt="">
           <h2>Help us improve</h2>
@@ -47,11 +47,11 @@
           us!!!</p>
         <label>
           Firstname:
-          <input class="input" type="text" placeholder="Stepan" name="firstname">
+          <input class="input" type="text" placeholder="Stepan" name="firstname" pattern="[A-Za-zА-Яа-яЁёІі]{2,25}">
         </label>
         <label>
           Secondname:
-          <input class="input" type="text" placeholder="Gugo" name="secondname">
+          <input class="input" type="text" placeholder="Gugo" name="secondname" pattern="[A-Za-zА-Яа-яЁёІі]{2,25}">
         </label>
         <label>
           E-mail:
@@ -60,14 +60,14 @@
         <label>
           Your feedback:
           <textarea name="feedback" id="textarea-feedback" cols="60" rows="10" maxlength="599"
-            placeholder="Write your feedback"></textarea>
+            placeholder="Write your feedback" wrap="soft"></textarea>
         </label>
         <div class="second-page-form-rating">
           <div class="second-page-form-rating-text">
             <img src="./img/star_115223.png" width="24" alt="">
             <p>Please rate our app</p>
           </div>
-          <div class="second-page-form-rating-radio">
+          <fieldset class="second-page-form-rating-radio">
             <label>
               1
               <input class="radio" type="radio" name="rating" value="1">
@@ -88,7 +88,7 @@
               5
               <input class="radio" type="radio" name="rating" value="5">
             </label>
-          </div>
+          </fieldset>
         </div>
         <button class="second-page-form-button-sumbit" type="submit">Submit</button>
 

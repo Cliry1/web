@@ -27,18 +27,17 @@ form.addEventListener("input", () =>{
 })
 
 form.addEventListener("submit", event=> {
+  event.preventDefault();
+  if(form.elements.feedback.value.trim()===""||form.elements.email.value.trim()===""){
+    alert("Email and feedback must be filled");
+    return;
+  }
   iziToast.success({
     title: 'Success',
     message:
       'Thank you for your feedback',
     position: "topCenter"
   });
-  event.preventDefault();
-  if(form.elements.feedback.value.trim()===""||form.elements.email.value.trim()===""){
-    alert("Email and feedback must be filled");
-    return;
-  }
-
   localStorage.removeItem(storage);
   form.reset();
 })

@@ -168,12 +168,13 @@
   .container-title{
     display: block;
     text-align: center;
-    margin-top: 40px;
     margin-bottom: 40px;
   }
   .main-title{
-    display: inline;
+    display: block;
     font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
   }
 
   .main-text{
@@ -192,7 +193,9 @@
     display: flex;
     border-radius: 50px;
   }
-
+  .section-gallery{
+    margin-top: 40px;
+  }
   .second-section .container>h2{
     font-size: 95px;
   }
@@ -277,6 +280,11 @@
     display: flex;
     gap: 12px;
     margin-bottom: 12px;
+  }
+  fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
   }
   label{
     display: flex;
